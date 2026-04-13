@@ -2,13 +2,12 @@
 
 class $modify(MyButtonHook, CCMenuItemSprite) {
     void selected() {
-        CCMenuItemSprite::selected(); // keep original behavior
+        CCMenuItemSprite::selected();
 
-        // get the normal image sprite
         auto sprite = this->getNormalImage();
         if (sprite) {
             auto tex = CCTextureCache::sharedTextureCache()
-                ->addImage("myCustomPressed.png");
+                ->addImage("soggy.png");
 
             sprite->setTexture(tex);
             sprite->setTextureRect(

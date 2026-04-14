@@ -22,6 +22,9 @@
     	}
 	},
 	{
-		"tags": "jokes"
+		"tags":
+			[
+			"jokes"
+			]
 	}
 }

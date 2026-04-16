@@ -6,14 +6,14 @@
 		"android": "2.2081",
 		"ios": "2.2081"
 	},
-	"version": "v1.1.8",
+	"version": "v1.0.0",
 	"id": "bao143.midassoggy",
 	"name": "Midas Soggy",
 	"developer": "Bao143",
 	"description": "Midas but soggy!!!!",
 	"resources": {
 		"sprites": [
-		    "resources/soggy.png"
+		    "resources/soggycat.png"
 		],
 		"files": [
 			"resources/honk.wav"

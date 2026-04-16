@@ -1,10 +1,14 @@
+#include <Geode/modify/CCMenuItemSpriteExtra.hpp>
+#include <Geode/binding/FMODAudioEngine.hpp>
+
+using namespace geode::prelude;
+
 class $modify(MyButtonHook, CCMenuItemSpriteExtra) {
 
     void selected() {
         CCMenuItemSpriteExtra::selected();
-
-        auto spr = CCSprite::create("myTexture.png");
-        if (spr) {
+        FMODAudioEngine::get()->playEffect("honk.wav");
+        if (auto spr = CCSprite::create("soggycat.png")) {
             this->setSprite(spr);
             this->updateSprite();
         }
@@ -12,11 +16,6 @@ class $modify(MyButtonHook, CCMenuItemSpriteExtra) {
 
     void activate() {
         CCMenuItemSpriteExtra::activate();
-
-        auto spr = CCSprite::create("myTexture.png");
-        if (spr) {
-            this->setSprite(spr);
-            this->updateSprite();
-        }
+        FMODAudioEngine::get()->playEffect("honk.wav");
     }
 };

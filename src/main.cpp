@@ -8,14 +8,9 @@ class $modify(MyButtonHook, CCMenuItemSpriteExtra) {
     void selected() {
         CCMenuItemSpriteExtra::selected();
         FMODAudioEngine::get()->playEffect("honk.wav");
-        if (auto spr = CCSprite::create("soggycat.png")) {
+            if (auto spr = CCSprite::create("soggycat.png")) {
             this->setSprite(spr);
             this->updateSprite();
         }
-    }
-
-    void activate() {
-        CCMenuItemSpriteExtra::activate();
-        FMODAudioEngine::get()->playEffect("honk.wav");
     }
 };

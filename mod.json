@@ -19,7 +19,7 @@
 			"resources/*.png"
 		],
 		"files": [
-			"resources/*.wav",
+			"resources/*.wav"
 		]
 	},
 	"dependencies": {
@@ -35,7 +35,7 @@
 		"settings": {
 			"disable": {
 				"name": "Disable",
-				"description": "Disables the mod completely.",
+				"description": "Disables the mod completely(Baddest thig)",
 				"type": "bool",
 				"default": false
 			}

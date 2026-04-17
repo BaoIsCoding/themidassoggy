@@ -4,11 +4,11 @@
 using namespace geode::prelude;
 
 class $modify(MyButtonHook, CCMenuItemSpriteExtra) {
-
-    void selected() {
-        CCMenuItemSpriteExtra::selected();
-        if (auto frame = CCSpriteFrameCache::get()->spriteFrameByName("whatever")) {
-            sprite->setDisplayFrame(frame);
+        void selected() {
+            CCMenuItemSpriteExtra::selected();
+                if (auto spr = CCSprite::create("soggycat.png"_spr)) {
+                this->setSprite(spr);
+                this->updateSprite();
+            }
         }
-    }
 };

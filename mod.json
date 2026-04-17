@@ -17,9 +17,6 @@
 	"resources": {
 		"sprites": [
 			"resources/*.png"
-		],
-		"files": [
-			"resources/*.wav"
 		]
 	},
 	"dependencies": {

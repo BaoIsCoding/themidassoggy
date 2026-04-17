@@ -11,5 +11,6 @@ class $modify(MyButtonHook, CCMenuItemSpriteExtra) {
             this->setSprite(spr);
             this->updateSprite();
         }
+    sprite->setDisplayFrame(CCSpriteFrameCache::get()->spriteFrameByName("soggycat.png"))
     }
 };

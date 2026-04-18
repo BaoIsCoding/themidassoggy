@@ -11,8 +11,8 @@ class $modify(MyButtonHook, CCMenuItemSpriteExtra) {
                 sprite->setTexture(tex);
                 sprite->setTextureRect(CCRectMake(
                     0, 0,
-                    tex->getContentSize().width,
-                    tex->getContentSize().height
+                    tex->getPixelsWide(),
+                    tex->getPixelsHigh()
                 ));
             }
         }
